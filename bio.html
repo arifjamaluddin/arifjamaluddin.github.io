@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  
+* {
+  box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 img.resize {
   max-width:15%;
   max-height:15%;
@@ -32,6 +49,16 @@ div {
 </head>
 <body>
 <a href="https://www.instagram.com/jamal_arif_/" target="_blank"><img class="resize" src="http://i65.tinypic.com/2bvcx0.jpg" alt="porfile"></a>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 <div><p class="Monospace"><font size="3" color="#dbdde0">Arif Jamaluddin is a programmer and designer currently pursuing a degree in Computer Science at the University of Michigan in Ann Arbor. He also enjoys traveling, photography making YouTube Videos, and ballin. He grew up in Kalamazoo MI, and develop a love for computer science while studying at the Kalamazoo Area of Mathematic and Science Center and developed a love for design and making videos while making films with his friend Nathan Ginter. In the near future he hopes to use his expertise in these areas to focus on developing sustainable products that will reduce carbon emissions, so we can all live on this planet for a few more years. In other words, he is more of like a superhero...</font></p></div>  
 <div> <p class="Monospace"><font size="3" color="white">Born: 1999 Cheyenne, Wyoming</font></p></div>
 <p class="Monospace"> <font size="3" color="#dbdde0">Education:</font></p>
